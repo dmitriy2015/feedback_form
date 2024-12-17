@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form class="feedback-form" action="#" method="post">
+    <div class="form-row">
+        <input type="text" name="company" placeholder="Компания" required>
+    </div>
+    <div class="form-row">
+        <input type="text" name="city" placeholder="Город" required>
+        <input type="tel" name="phone" placeholder="Телефон" required>
+    </div>
+    <div class="form-row">
+        <input type="email" name="email" placeholder="Почта" required>
+        <input type="url" name="site" placeholder="Сайт">
+    </div>
+    <div class="form-row">
+        <input type="text" name="representative" placeholder="ФИО представителя" required>
+        <input type="text" name="position" placeholder="Должность">
+    </div>
+    <div class="form-row">
+        <textarea name="message" placeholder="Сообщение" rows="5"></textarea>
+    </div>
+    <div class="form-row captcha-row">
+        <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+    </div>
+    <div class="form-row">
+        <button type="submit" class="submit-btn">Отправить</button>
+    </div>
+
+
+</form>
+
+<!-- Подключение reCAPTCHA -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>
